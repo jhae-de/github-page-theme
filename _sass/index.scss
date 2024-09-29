@@ -1,0 +1,8 @@
+$paths: () !default;
+
+@use 'variables';
+@use 'fonts' with (
+  $paths: $paths
+);
+@use 'scaffold';
+@use 'syntax-highlighting';

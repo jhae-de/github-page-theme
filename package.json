@@ -1,0 +1,28 @@
+{
+  "name": "@jhae/github-page-theme",
+  "version": "0.0.0",
+  "author": {
+    "name": "JHAE",
+    "url": "https://github.com/jhae-de"
+  },
+  "repository": {
+    "url": "https://github.com/jhae-de/github-page-theme.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/jhae-de/github-page-theme",
+  "license": "MIT",
+  "scripts": {
+    "lint": "npm run-script lint:prettier && npm run-script lint:sass",
+    "lint:prettier": "prettier . --check",
+    "lint:sass": "stylelint ./_sass --formatter verbose --quiet"
+  },
+  "devDependencies": {
+    "@jhae/stylelint-config-strict-scss": "^2.4",
+    "autoprefixer": "^10.4",
+    "postcss": "^8.4",
+    "postcss-cli": "^11.0",
+    "postcss-scss": "^4.0",
+    "prettier": "^3.3",
+    "tailwindcss": "^3.4"
+  }
+}
