@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xml:space="preserve"
+  width="100%"
+  height="100%"
+  viewBox="0 0 512 512"
+  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+>
+  <style>
+    @media (prefers-color-scheme: dark) {
+      #favicon {
+        fill:#FFFFFF !important;
+      }
+    }
+  </style>
+
+  <g id="favicon" style="fill:#202830;">
+    <path d="M176,44L176,108C176,112.415 172.415,116 168,116L104,116C99.585,116 96,112.415 96,108L96,44C96,39.585 99.585,36 104,36L168,36C172.415,36 176,39.585 176,44Z"/>
+    <path d="M176,164L176,468C176,472.415 172.415,476 168,476L104,476C99.585,476 96,472.415 96,468L96,164C96,159.585 99.585,156 104,156L168,156C172.415,156 176,159.585 176,164Z"/>
+    <path d="M296,44L296,388C296,392.415 292.415,396 288,396L224,396C219.585,396 216,392.415 216,388L216,44C216,39.585 219.585,36 224,36L288,36C292.415,36 296,39.585 296,44Z"/>
+    <path d="M416,224L416,388C416,392.415 412.415,396 408,396L344,396C339.585,396 336,392.415 336,388L336,224C336,219.585 339.585,216 344,216L408,216C412.415,216 416,219.585 416,224Z"/>
+  </g>
+</svg>

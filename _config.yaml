@@ -1,0 +1,11 @@
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+
+title: JHAE GitHub Page Theme
+
+# -> GitHub metadata plugin
+repository: jhae-de/github-page-theme
+# <- GitHub metadata plugin

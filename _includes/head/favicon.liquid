@@ -1,0 +1,33 @@
+<link
+  rel="icon"
+  href="{{ site.data.app.paths.images | append: '/favicons/favicon-light-mode.ico?' | append: site.github.build_revision | relative_url }}"
+  media="(prefers-color-scheme: light)"
+  sizes="48x48"
+/>
+<link
+  rel="icon"
+  href="{{ site.data.app.paths.images | append: '/favicons/favicon-dark-mode.ico?' | append: site.github.build_revision | relative_url }}"
+  media="(prefers-color-scheme: dark)"
+  sizes="48x48"
+/>
+<link
+  rel="icon"
+  href="{{ site.data.app.paths.images | append: '/favicons/favicon.svg?' | append: site.github.build_revision | relative_url }}"
+  type="image/svg+xml"
+  sizes="any"
+/>
+<link
+  rel="apple-touch-icon"
+  href="{{ site.data.app.paths.images | append: '/favicons/apple-touch-icon.png?' | append: site.github.build_revision | relative_url }}"
+  sizes="180x180"
+/>
+<link
+  rel="manifest"
+  href="{{ site.data.app.paths.images | append: '/favicons/site.webmanifest?' | append: site.github.build_revision | relative_url }}"
+/>
+<meta name="msapplication-TileColor" content="{{ site.data.app.theme.colors.favicon.windows-tile }}" />
+<meta
+  name="msapplication-config"
+  content="{{ site.data.app.paths.images | append: '/favicons/browserconfig.xml?' | append: site.github.build_revision | relative_url }}"
+/>
+<meta name="theme-color" content="{{ site.data.app.theme.colors.favicon.android-theme }}" />
