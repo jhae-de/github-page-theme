@@ -4,6 +4,15 @@ import colors from 'tailwindcss/colors';
 module.exports = {
   content: ['./_includes/**/*.liquid', './_layouts/**/*.liquid', './demo/**/*.html'],
   theme: {
+    fontFamily: {
+      sans: [
+        'Roboto, ui-sans-serif, system-ui, sans-serif',
+        {
+          fontVariationSettings:
+            "'slnt' 0, 'wdth' 100, 'GRAD' 0, 'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712",
+        },
+      ],
+    },
     colors: {
       inherit: colors.inherit,
       current: colors.current,

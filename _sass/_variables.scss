@@ -1,3 +1,13 @@
+$file-extension-to-font-format-map: (
+  eot: 'embedded-opentype',
+  otc: 'collection',
+  otf: 'opentype',
+  ttc: 'collection',
+  ttf: 'truetype',
+  woff: 'woff',
+  woff2: 'woff2',
+);
+
 :root {
   --theme-color-brand-50: 240 242 244;
   --theme-color-brand-100: 224 228 232;

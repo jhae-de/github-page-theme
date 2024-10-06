@@ -1,0 +1,32 @@
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:meta';
+@use 'sass:string';
+@use 'variables';
+
+@function get-file-extension($file-name) {
+  @if meta.type-of($file-name) != 'string' {
+    @error 'Argument "$file-name" must be of type string.';
+  }
+
+  $file-parts: string.split(
+    $string: $file-name,
+    $separator: '.',
+  );
+
+  @return if(list.length($file-parts) > 0, list.nth($list: $file-parts, $n: -1), null);
+}
+
+@function get-font-format($file-name) {
+  $file-extension: get-file-extension($file-name);
+  $format: map.get(
+    $map: variables.$file-extension-to-font-format-map,
+    $key: $file-extension,
+  );
+
+  @if not $format {
+    @error 'No font format found for file extension "#{$file-extension}".';
+  }
+
+  @return $format;
+}
