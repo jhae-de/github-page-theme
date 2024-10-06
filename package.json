@@ -12,12 +12,20 @@
   "homepage": "https://github.com/jhae-de/github-page-theme",
   "license": "MIT",
   "scripts": {
-    "lint": "npm run-script lint:prettier && npm run-script lint:sass",
-    "lint:prettier": "prettier . --check",
-    "lint:sass": "stylelint ./_sass --formatter verbose --quiet"
+    "fix": "npm run-script prettier:fix && npm run-script sass:fix",
+    "lint": "npm run-script prettier:lint && npm run-script sass:lint",
+    "postinstall": "./bin/post-install.sh",
+    "prettier:fix": "prettier . --write",
+    "prettier:lint": "prettier . --check",
+    "sass:fix": "stylelint ./_sass --fix --formatter verbose",
+    "sass:lint": "stylelint ./_sass --formatter verbose --quiet"
   },
   "devDependencies": {
-    "@jhae/stylelint-config-strict-scss": "^2.4",
+    "@fontsource-variable/roboto-flex": "^5.1",
+    "@fontsource-variable/source-code-pro": "^5.1",
+    "@fortawesome/fontawesome-free": "^6.6",
+    "@fortawesome/fontawesome-svg-core": "^6.6",
+    "@jhae/stylelint-config-strict-scss": "^2.5",
     "autoprefixer": "^10.4",
     "postcss": "^8.4",
     "postcss-cli": "^11.0",

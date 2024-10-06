@@ -4,6 +4,16 @@ import colors from 'tailwindcss/colors';
 module.exports = {
   content: ['./_includes/**/*.liquid', './_layouts/**/*.liquid', './demo/**/*.html'],
   theme: {
+    fontFamily: {
+      sans: [
+        '"Roboto Flex Variable", ui-sans-serif, system-ui, sans-serif',
+        {
+          fontVariationSettings:
+            "'slnt' 0, 'wdth' 100, 'GRAD' 0, 'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712",
+        },
+      ],
+      mono: '"Source Code Pro Variable", ui-monospace, monospace',
+    },
     colors: {
       inherit: colors.inherit,
       current: colors.current,

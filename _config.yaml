@@ -4,6 +4,17 @@ defaults:
     values:
       layout: default
 
+exclude:
+  - CHANGELOG.md
+  - docker-compose.yaml
+  - LICENSE
+  - makefile
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - README.md
+  - tailwind.config.js
+
 title: JHAE GitHub Page Theme
 
 # -> GitHub metadata plugin
